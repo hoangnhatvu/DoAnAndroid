@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        tools:context="._Fragment.SignupTabFragment">
+        <EditText
+            android:id="@+id/username_sigup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_bg"
+            android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+            android:drawablePadding="10dp"
+            android:hint="Tài khoản"
+            android:inputType="text"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0" />
+
+        <EditText
+            android:id="@+id/password_signup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+            android:drawablePadding="10dp"
+            android:hint="Mật khẩu"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username_sigup"
+            app:layout_constraintVertical_bias="0" />
+
+
+        <EditText
+            android:id="@+id/password_confirm_signup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+            android:drawablePadding="10dp"
+            android:hint="Nhập lại mật khẩu"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_signup"
+            app:layout_constraintVertical_bias="0" />
+
+        <EditText
+            android:id="@+id/name_signup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:drawableLeft="@drawable/ic_baseline_edit_24"
+            android:drawablePadding="5dp"
+            android:hint="Tên khách hàng"
+            android:inputType="text"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_confirm_signup"
+            app:layout_constraintVertical_bias="0" />
+        <EditText
+            android:id="@+id/address_signup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:drawableLeft="@drawable/ic_baseline_add_location_24"
+            android:drawablePadding="5dp"
+            android:hint="Địa chỉ"
+            android:inputType="text"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_signup"
+            app:layout_constraintVertical_bias="0" />
+        <EditText
+            android:id="@+id/phone_signup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:drawableLeft="@drawable/ic_baseline_phone_24"
+            android:drawablePadding="5dp"
+            android:hint="Số điện thoại"
+            android:inputType="text"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/address_signup"
+            app:layout_constraintVertical_bias="0" />
+
+        <ImageView
+            android:id="@+id/imageSignup"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/no_image"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phone_signup" />
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:padding="10dp"
+            android:text="Đăng kí"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageSignup"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

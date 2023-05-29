@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/background_item_product">
+
+    <TextView
+        android:id="@+id/titleCodeOrderOfCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã hoá đơn:"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/titleDateOrderOfCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleCodeOrderOfCustomer"
+        android:text="Ngày lập:"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+
+        />
+
+    <TextView
+        android:id="@+id/titleTotalOrderOfCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/titleDateOrderOfCustomer"
+        android:text="Tổng tiền:"
+        android:textSize="20sp"
+
+        />
+
+    <TextView
+        android:id="@+id/codeOrderOfCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Mã hoá đơn"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/dateOrderOfCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleCodeOrderOfCustomer"
+        android:layout_alignParentRight="true"
+        android:text="Ngày lập"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/unitTotalOrderOfCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="đ"
+        android:textSize="15.5sp"
+        android:layout_below="@id/titleDateOrderOfCustomer"
+        android:layout_toLeftOf="@id/totalOrderOfCustomer"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:id="@+id/totalOrderOfCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleDateOrderOfCustomer"
+        android:layout_alignParentRight="true"
+        android:text="200000"
+        android:textSize="20sp"
+
+        />
+</RelativeLayout>

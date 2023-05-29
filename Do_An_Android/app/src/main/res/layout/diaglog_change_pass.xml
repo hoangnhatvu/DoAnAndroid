@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+<RelativeLayout
+    android:id="@+id/layoutChangepass"
+
+    android:layout_width="match_parent"
+    android:layout_height="?android:actionBarSize">
+    <ImageView
+        android:id="@+id/iconChangePass"
+        android:layout_marginLeft="30dp"
+        android:layout_height="match_parent"
+        android:layout_width="45dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/icon"
+        />
+
+    <TextView
+        android:id="@+id/titleChangepass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iconChangePass"
+        android:padding="10dp"
+        android:text="Đổi mật khẩu"
+        android:textSize="25dp"
+        />
+</RelativeLayout>
+<RelativeLayout
+    android:layout_below="@id/layoutChangepass"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:padding="10dp"
+    >
+
+    <EditText
+        android:id="@+id/passOld"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="10dp"
+        android:hint="Mật khẩu cũ"
+        android:inputType="textPassword"
+        android:padding="10dp" />
+    <EditText
+        android:id="@+id/passNew"
+        android:layout_below="@id/passOld"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="10dp"
+        android:hint="Mật khẩu mới"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        />
+    <EditText
+        android:id="@+id/passNewConfirm"
+        android:layout_below="@id/passNew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="10dp"
+        android:hint="Mật khẩu mới"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:layout_below="@id/passNewConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+
+        >
+        <Button
+            android:id="@+id/btnConfirmChangpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:padding="10dp"
+            android:text="Xác nhận"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            />
+        <Button
+            android:id="@+id/btnCancelChangpass"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:padding="10dp"
+            android:text="Đóng"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/background_item_product"
+    >
+
+    <ImageView
+        android:id="@+id/productImageRecently"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/b1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/span_new"
+        app:layout_constraintBottom_toBottomOf="@+id/productImageRecently"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/productImageRecently"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/productNameRecently"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Dương Đông Duy"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productImageRecently"
+        app:layout_constraintVertical_bias="0"
+       />
+
+    <TextView
+        android:id="@+id/productPriceSaleRecently"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="20.000.000"
+        android:textColor="@color/orange"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@+id/unitPriceSaleRecently"
+        app:layout_constraintTop_toBottomOf="@+id/productNameRecently"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/unitPriceSaleRecently"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="đ"
+        android:textColor="@color/orange"
+        android:textSize="11.5sp"
+        app:layout_constraintBottom_toBottomOf="@id/productPriceSaleRecently"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productNameRecently"
+        app:layout_constraintVertical_bias="1" />
+
+
+    <TextView
+        android:id="@+id/productPriceRecently"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20.000.000"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/productPriceSaleRecently"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHorizontal_bias="1"
+        />
+
+    <TextView
+        android:id="@+id/unitPriceRecently"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="đ"
+        android:textSize="11.5sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/productPriceRecently"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@+id/productPriceSaleRecently"
+        app:layout_constraintTop_toTopOf="@+id/productPriceSaleRecently"
+        app:layout_constraintVertical_bias="0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

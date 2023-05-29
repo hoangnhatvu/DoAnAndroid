@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="175dp"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/background_item_product"
+    >
+    <ImageView
+        android:id="@+id/productImageDiscount"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/b1" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/span_hot"
+        app:layout_constraintBottom_toBottomOf="@+id/productImageDiscount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/productImageDiscount"
+        app:layout_constraintVertical_bias="0" />
+    <TextView
+        android:id="@+id/productNameDiscount"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dương Đông Duy"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/productImageDiscount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productImageDiscount"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:id="@+id/productPriceDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="20.000.000"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintTop_toBottomOf="@+id/productNameDiscount"
+        app:layout_constraintVertical_bias="0.0"
+
+        />
+
+    <TextView
+        android:id="@+id/unitMoneyPriceDiscounted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="đ"
+
+        android:textSize="11.5sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/productPriceDiscount"
+        app:layout_constraintStart_toEndOf="@+id/productPriceSaleDiscount"
+        app:layout_constraintTop_toBottomOf="@+id/productNameDiscount"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHorizontal_bias="1"
+        />
+
+    <TextView
+        android:id="@+id/productPriceSaleDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10.000.000"
+        android:textColor="@color/orange"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+
+        app:layout_constraintStart_toEndOf="@+id/unitMoneyPriceSaleDiscounted"
+        app:layout_constraintTop_toBottomOf="@+id/productNameDiscount"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/unitMoneyPriceSaleDiscounted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="đ"
+        android:textColor="@color/orange"
+        android:textSize="11.5sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="5dp"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productNameDiscount"
+        app:layout_constraintVertical_bias="1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

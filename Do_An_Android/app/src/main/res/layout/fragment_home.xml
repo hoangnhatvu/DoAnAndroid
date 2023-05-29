@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="._Fragment.HomeFragment">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarmain"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                app:title="Trang chủ">
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginEnd="16dp"
+                    app:queryBackground="@drawable/search_view_custom"
+                    app:queryHint="Tìm kiếm tại đây...">
+
+                </androidx.appcompat.widget.SearchView>
+            </androidx.appcompat.widget.Toolbar>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/bottomnavigation">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".activity.MainActivity">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </androidx.viewpager.widget.ViewPager>
+
+                    <me.relex.circleindicator.CircleIndicator
+                        android:id="@+id/circleindicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        app:ci_drawable="@drawable/circleindicator_round"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/viewPager" />
+
+                    <TextView
+                        android:id="@+id/txtTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="48dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/open_sans"
+                        android:lineSpacingExtra="4dp"
+                        android:text="Shop bán linh kiện điện tử tốt nhất hiện tại."
+                        android:textColor="#717171"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/circleindicator" />
+                    <!--Type product-->
+                    <TextView
+                        android:id="@+id/txtTypeProduct"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="24dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="Các loại linh kiện"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+                    <TextView
+                        android:id="@+id/allCategoryMore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="Xem thêm"
+                        android:textColor="#448AFF"
+                        app:layout_constraintBottom_toBottomOf="@+id/txtTypeProduct"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/txtTypeProduct" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/categoryRecycler"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/allCategoryMore" />
+
+
+                    <!--Discount-->
+                    <TextView
+                        android:id="@+id/txtDiscount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="24dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="Sản phẩm giảm giá"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/categoryRecycler" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/discountedRecycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtDiscount" />
+
+
+                    <!--Recently-->
+                    <TextView
+                        android:id="@+id/txtRecently"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="24dp"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:text="Linh kiện mới"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/discountedRecycler" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:id="@+id/recently_item"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtRecently" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</FrameLayout>

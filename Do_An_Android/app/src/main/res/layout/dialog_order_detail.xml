@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+<TextView
+    android:id="@+id/titleOrderDetail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Chi tiết đơn hàng 23"
+    android:gravity="center"
+    android:textSize="25dp"
+    android:textColor="@color/orange"
+    />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleviewOrderDetail"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnCancelOrderDetail"
+        android:layout_below="@id/titleOrderDetail" />
+
+
+    <Button
+        android:id="@+id/btnCancelOrderDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_bg"
+        android:padding="10dp"
+        android:text="Đóng"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+</RelativeLayout>

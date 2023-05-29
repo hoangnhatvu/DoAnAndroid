@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/background_item_product"
+    >
+    <ImageView
+        android:id="@+id/imageProductOfType"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/b1" />
+
+    <TextView
+
+        android:id="@+id/nameProductOfType"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dương Đông Duy ddddddddddddddddddddddđ"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageProductOfType"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageProductOfType"
+
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/priceSaleProductOfType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20.000.000"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/orange"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+
+        app:layout_constraintStart_toEndOf="@+id/unitPriceSaleProductOfType"
+        app:layout_constraintTop_toBottomOf="@+id/nameProductOfType"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/unitPriceSaleProductOfType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="đ"
+        android:layout_marginTop="9dp"
+        android:textColor="@color/orange"
+        android:textSize="11.5sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameProductOfType"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/unitPriceProductOfType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="đ"
+        android:textSize="11.5sp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/priceProductOfType"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@+id/priceSaleProductOfType"
+        app:layout_constraintTop_toBottomOf="@+id/nameProductOfType"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/priceProductOfType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20.000.000"
+        android:textSize="10sp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameProductOfType"
+        app:layout_constraintVertical_bias="0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

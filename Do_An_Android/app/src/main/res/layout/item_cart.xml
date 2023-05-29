@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/background_item_cart"
+    >
+
+    <ImageView
+        android:id="@+id/image_detail_cart"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/image_round"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/b1" />
+
+    <TextView
+        android:id="@+id/name_detail_cart"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/image_detail_cart"
+        android:layout_alignParentRight="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Sản phẩm test"
+        android:textSize="15dp"
+
+        />
+
+    <EditText
+        android:id="@+id/quantity_detail_cart"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_detail_cart"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/image_detail_cart"
+        android:background="@drawable/edit_text_bg"
+        android:inputType="number"
+        android:padding="10dp"
+
+        />
+
+    <TextView
+
+        android:id="@+id/unitMoneyItemCartPrice"
+        android:layout_width="6.6dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_detail_cart"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@id/price_deatail_cart"
+        android:text="đ"
+        android:textColor="@color/orange"
+        android:textSize="11.5sp" />
+
+    <TextView
+        android:id="@+id/price_deatail_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_detail_cart"
+        android:layout_alignParentRight="true"
+        android:text="5.000 vnd"
+        android:textColor="@color/orange"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/unitMoneyItemCartSubtotal"
+        android:layout_width="6.6dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/price_deatail_cart"
+        android:layout_toLeftOf="@id/subtotal_detail_cart"
+        android:text="đ"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/orange"
+        android:textSize="11.5sp" />
+    <TextView
+        android:id="@+id/subtotal_detail_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/price_deatail_cart"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:text="5.000 vnd"
+        android:textColor="@color/orange"
+        android:textSize="20sp" />
+
+</RelativeLayout>

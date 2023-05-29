@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        tools:context="._Fragment.SignupTabFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            app:layout_constraintVertical_bias="0"
+            android:id="@+id/layoutCustomer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:padding="5dp"
+            >
+
+            <ImageView
+                android:id="@+id/imageCustomer"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/image_round"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/b1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias=".5"
+                app:layout_constraintHorizontal_bias="0"
+                />
+
+            <TextView
+                android:id="@+id/textCustomer"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintVertical_bias=".5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_toRightOf="@id/imageCustomer"
+                android:text="Dương Đông Duy"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageCustomer"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng xuất"
+                android:textColor="#FF0000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textCustomer"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textSize="20dp"
+                app:layout_constraintVertical_bias=".5"
+                app:layout_constraintHorizontal_bias="1"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <EditText
+            android:id="@+id/name_updateCustomer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_bg"
+            android:drawableLeft="@drawable/ic_baseline_edit_24"
+            android:drawablePadding="5dp"
+            android:hint="Tên khách hàng"
+            android:inputType="text"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutCustomer"
+            android:layout_marginTop="10dp"
+            app:layout_constraintVertical_bias="0"
+            />
+        <EditText
+            android:id="@+id/address_updateCustomer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:drawableLeft="@drawable/ic_baseline_add_location_24"
+            android:drawablePadding="5dp"
+            android:hint="Địa chỉ"
+            android:inputType="text"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_updateCustomer"
+            app:layout_constraintVertical_bias="0" />
+        <EditText
+            android:id="@+id/phone_updateCustomer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:drawableLeft="@drawable/ic_baseline_phone_24"
+            android:drawablePadding="5dp"
+            android:hint="Số điện thoại"
+            android:inputType="text"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/address_updateCustomer"
+            app:layout_constraintVertical_bias="0" />
+        <ImageView
+            android:id="@+id/imageUpdateCustomer"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/no_image"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phone_updateCustomer" />
+        <Button
+            android:id="@+id/btnUpdateCustomer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:padding="10dp"
+            android:text="Cập nhật thông tin"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageUpdateCustomer"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="30dp"
+            />
+
+        <Button
+            android:id="@+id/btnChangepass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_bg"
+            android:padding="10dp"
+            android:text="Đổi mật khẩu"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.888"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnUpdateCustomer"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="10dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
